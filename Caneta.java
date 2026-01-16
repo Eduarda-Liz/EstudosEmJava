@@ -1,18 +1,18 @@
 public class Caneta {
-    String cor;
-    String modelo;
-    double ponta;
-    int carga; 
-    boolean tampada;
+    public String cor;
+    public String modelo;
+    public double ponta;
+    protected int carga; 
+    private boolean tampada; //PRIVADO - SÓ QUEM MEXE É A PROPRIA CLASSE!!!
 
-    void status() {
+    public void status() {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Cor: " + this.cor);
         System.out.println("está tampada? " + this.tampada);
         System.out.println("Carga: " + this.carga);
         System.out.println("Ponta: " + this.ponta);
     }
-    void rabiscar() {
+    public void rabiscar() {
         if (this.tampada == true) {
             System.out.println("Não posso rabiscar estou tampada");
         } else {
@@ -20,11 +20,11 @@ public class Caneta {
         }
     }
 
-    void tampar() {
-        this.tampada = true; //THIS é o NOME do objeto que chamou, no nosso caso, C1.
-    } //se quiser modificar um atributo dentro da propria classe, colocar o this na frenre
+    public void tampar() {
+        this.tampada = true; //No "Private" só quem pode mexer é a própria classe, por isso é possível tampar e destampar
+    } 
 
-    void destampar() {
+    public void destampar() {
         this.tampada = false;
     }
 }
