@@ -1,0 +1,13 @@
+/*METODOS ESPECIAIS: 
+instanciar objetos: a "chamada" dos objetos, a primeira linha que fica Caneta c1 = new Caneta();
+atributo = nao tem letra maiuscula no inicio, nao tem parentesis (parametros é pra metodos)
+
+METODOS ACESSORES/GETTERS: dao acesso a uma determinada coisa. Dificulta o acesso direto.
+o metodo getter possui o acesso direto a informacao, evitando que os objetos possuem esse acesso.
+como chamar: c1.getTotalDocumentos() 
+
+METODOS MODIFICADORES/MUTANTES/SETTERS: modificam coisas que estao dentro do objeto, sem que conceda acesso direto ao atributo
+c1.setTotalDocumento(doc) normalmente ele precisa de um parametro pra funcionar. Mais abistrato.
+
+METODO CONSTRUTOR/CONSTRUCT: sempre que instanciar um objeto, ele vai executar o comando do metodo construtor
+define um padrao para todo item criado naquela classe. O objeto deve ser declarado com a quantidade de parametros exigida no construct
