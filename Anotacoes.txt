@@ -1,0 +1,45 @@
+METODOS ESPECIAIS: 
+instanciar objetos: a "chamada" dos objetos, a primeira linha que fica Caneta c1 = new Caneta();
+atributo = nao tem letra maiuscula no inicio, nao tem parentesis (parametros é pra metodos)
+
+METODOS ACESSORES/GETTERS: dao acesso a uma determinada coisa. Dificulta o acesso direto.
+o metodo getter possui o acesso direto a informacao, evitando que os objetos possuem esse acesso.
+como chamar: c1.getTotalDocumentos(). Geralmente são publicos.
+
+METODOS MODIFICADORES/MUTANTES/SETTERS: modificam coisas que estao dentro do objeto, sem que conceda acesso direto ao atributo
+c1.setTotalDocumento(doc) normalmente ele precisa de um parametro pra funcionar. Mais abistrato. Geralmente são publicos.
+
+METODO CONSTRUTOR/CONSTRUCT: sempre que instanciar um objeto, ele vai executar o comando do metodo construtor
+define um padrao para todo item criado naquela classe. O objeto deve ser declarado com a quantidade de parametros exigida no construct
+
+AULA 5:
+
+transformar conta corrente em um objeto (historinha do jubileu e creuza): idealizar uma classe de uma conta de banco.
+tipo de conta, numero da conta, nome do dono, saldo, status (aberta ou n) - atributos
+abrir conta, fechar, depositar, sacar, pagar uma mensalidade - metodos
+
+ContaBanco
+---------------
++ numConta
+# tipo: 2 valores, cc ou cp
+- dono
+- saldo
+- status (aberta ou fechada)
+---------------
++ abrirConta(): mudo o status para true. Preciso dizer que tipo de conta é. Se for cc comeca com 50 se for cp comeca com 150
++ fecharConta(): nao pode ter dinheiro nem debito
++ depositar(): tem que estar aberta
++ sacar(): tenho que ter saldo e precisa estar aberta
++ pagarMensal(): desconto direto do saldo. CC 12 reais, cp 20 reais de mensalidade
+metodos ESPECIAIS - pra cada atributo temos um getter e setter.
+    getnumConta()
+    setnumConta()
+    getTipo()
+    setTipo()
+    getDono()
+    setDono()
+    getSaldo()
+    setSaldo()
+    getStatus()
+    setStatus()
+Metodo Construtor: sempre que criar uma conta o status fica como false e o saldo fica com 0
