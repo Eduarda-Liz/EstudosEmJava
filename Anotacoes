@@ -11,3 +11,6 @@ c1.setTotalDocumento(doc) normalmente ele precisa de um parametro pra funcionar.
 
 METODO CONSTRUTOR/CONSTRUCT: sempre que instanciar um objeto, ele vai executar o comando do metodo construtor
 define um padrao para todo item criado naquela classe. O objeto deve ser declarado com a quantidade de parametros exigida no construct
+
+Aula pratica 06b: Encapsulamento
+botao direito cria os getters e setters
