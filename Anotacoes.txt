@@ -62,3 +62,19 @@ public → qualquer classe pode acessar
 💡 No encapsulamento:
 atributos → private
 métodos de acesso → public
+
+
+Por que usar encapsulamento?
+✅ Vantagens
+Proteção dos dados
+Evita valores inválidos (ex: idade negativa)
+Maior controle
+Você decide como os dados podem ser alterados
+Facilidade de manutenção
+Mudanças internas não quebram outras partes do código
+Código mais organizado e profissional
+Muito usado em sistemas reais e frameworks (Spring, Hibernate, etc.)
+Encapsulamento na prática (regra mental)
+Sempre pense assim:
+❌ Não deixe atributos públicos
+✅ Crie métodos para controlar o acesso
