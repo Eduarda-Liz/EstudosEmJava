@@ -43,3 +43,22 @@ metodos ESPECIAIS - pra cada atributo temos um getter e setter.
     getStatus()
     setStatus()
 Metodo Construtor: sempre que criar uma conta o status fica como false e o saldo fica com 0
+
+
+O que é encapsulamento?
+Encapsulamento é o princípio da POO que protege os dados de uma classe, controlando como eles podem ser acessados ou modificados.
+Em vez de permitir acesso direto aos atributos, a classe:
+esconde seus dados internos
+oferece métodos controlados para acesso e alteração
+👉 A ideia principal é: “o que acontece dentro da classe, fica dentro da classe”.
+Como o encapsulamento funciona em Java?
+Em Java, o encapsulamento é feito principalmente com:
+Modificadores de acesso
+Getters e Setters
+Modificadores de acesso
+Os mais usados no encapsulamento são:
+private → só a própria classe pode acessar
+public → qualquer classe pode acessar
+💡 No encapsulamento:
+atributos → private
+métodos de acesso → public
