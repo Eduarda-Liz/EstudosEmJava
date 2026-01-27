@@ -105,4 +105,32 @@ getLigado()
 setTocando()
 getTocando()
 
+Aula 08: AGREGAÇÃO
 
+criar uma classe para os dois lutadores poderem luatem entre si (os dois precisam ter os mesmos atributos).
+
+------------------
+Luta
+------------------
+-desafiado (o tipo deles não é String, pois eles já existem, são instancias)
+-desafiante
+-rounds
+-aprovada
+-----------------
++marcarLuta()
++lutar()
+-----------------
+
+REPRESENTAÇÃO BASICA^
+
+Existe uma ligação entre as duas, então representa com uma linha slida com um losango na ponta.
+
+disputa> 
+
+colocar MULTIPLICIDADE: cada lutador pode participar de quantas lutas? "0..*"
+Cada luta, pode existir quantos lutadores? "*"
+
+diagrama de classes contém dados e funções.
+A Agregação é conhecida pelo tipo "tem um", como se fosse "tem um lutador"
+
+se eu utilizo uma instancia, um tipo abstrato de dados, eu posso utilizar tdos os metodos daquela classe
