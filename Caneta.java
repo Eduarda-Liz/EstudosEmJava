@@ -1,5 +1,3 @@
-package aula04;
-
 public class Caneta {
     private String modelo;
     private double ponta;

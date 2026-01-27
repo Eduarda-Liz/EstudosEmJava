@@ -44,78 +44,65 @@ metodos ESPECIAIS - pra cada atributo temos um getter e setter.
     setStatus()
 Metodo Construtor: sempre que criar uma conta o status fica como false e o saldo fica com 0
 
+PILARES DA POO:
+Encapsulamento (abstraçao), Herança e Polimorfismo.
 
-O que é encapsulamento?
-Encapsulamento é o princípio da POO que protege os dados de uma classe, controlando como eles podem ser acessados ou modificados.
-Em vez de permitir acesso direto aos atributos, a classe:
-esconde seus dados internos
-oferece métodos controlados para acesso e alteração
-👉 A ideia principal é: “o que acontece dentro da classe, fica dentro da classe”.
-Como o encapsulamento funciona em Java?
-Em Java, o encapsulamento é feito principalmente com:
-Modificadores de acesso
-Getters e Setters
-Modificadores de acesso
-Os mais usados no encapsulamento são:
-private → só a própria classe pode acessar
-public → qualquer classe pode acessar
-💡 No encapsulamento:
-atributos → private
-métodos de acesso → public
+Encapsulamento: capsula (pilha). A capsula serve como uma proteção de duplo sentido. Padronização. Protege o usuario do codigo e o codigo doo usuario(programador)
+Ocultar partes independentes da implementação, permitindo construir partes invisiceis ao mundo exterior. Não precisa saber o que há na arte interna de uma pilha, apenas como funciona (gera nergia)
+
+Não entra na capsula, apenas troca mensagens (ação). Um bom objeto encapsulado possui uma interface bem definida.
+
+interface: contato com o mundo exterior, qeu se define o que pode ser feito com o objeto desta classe. Comunicação com o meio externo.
+Encapsular não é obrigatorio, mas é uma boa prática para produzir classes mais eficientes.
+
+Vatagens: 
+1 - tornar mudanças invisiveis.
+2 - Facilitar a reutilização do código. Encapsulamento profundo mantém o padrão.
+3 - Reduzir efeitos colaterais. Um software não encapsulado pode ser destruido por um programador
+
+Como encapsular? Garantir a segurança (capa/capsula protegida). Identificação dos botoes
+Exemplo: Carro. Nõ precisa saber o funcionamento interno para usar o Carro, fica disponível apenas a interface.
+
+---------------------------
+<<interface>> (apenas possui metodo, não possui atributos)
+Controlador
+---------------------------
++ligar()
++desligar()
++abrirMenu()
++fecharMenu()                 
++maisVolume()
++menosVolume()
++ligarMudo()
++desligarMudo()
++play()
++pause()
+--------------------------
+Metodos abstratos: não vai ser desenvolvido na interface, apenas diz a existencia daquele metodo. Apenas a reação.
+A ção de aumentar um volume é a mesma pra diversos aparelhos, mas a implementação é diferente (se não, varios aumentariam ao mesmo tempo)
+-----------------------
+ControleRemoto (setinha pontilhada com triangulo emplementa uma interface, usando os metodos da interface)
+-----------------------
+-volume
+-ligado
+-tocando
+------------------------
++ligar()
++desligar()
++abrirMenu()
++fecharMenu()                 
++maisVolume()
++menosVolume()
++ligarMudo()
++desligarMudo()
++play()
++pause()
+[colocar metodos especiais nos atributos, getters e setters]
+setVolume()
+getVOlume()
+setLigado()
+getLigado()
+setTocando()
+getTocando()
 
 
-Por que usar encapsulamento?
-✅ Vantagens
-Proteção dos dados
-Evita valores inválidos (ex: idade negativa)
-Maior controle
-Você decide como os dados podem ser alterados
-Facilidade de manutenção
-Mudanças internas não quebram outras partes do código
-Código mais organizado e profissional
-Muito usado em sistemas reais e frameworks (Spring, Hibernate, etc.)
-Encapsulamento na prática (regra mental)
-Sempre pense assim:
-❌ Não deixe atributos públicos
-✅ Crie métodos para controlar o acesso
-
-
-
-public class ContaBancaria {
-
-    // Atributos privados (encapsulados)
-    private String titular;
-    private double saldo;
-
-    // Construtor
-    public ContaBancaria(String titular) {
-        this.titular = titular;
-        this.saldo = 0.0;
-    }
-
-    // Getter (apenas leitura)
-    public String getTitular() {
-        return titular;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    // Métodos públicos controlam as regras de negócio
-    public void depositar(double valor) {
-        if (valor > 0) {
-            saldo += valor;
-        } else {
-            System.out.println("Valor inválido para depósito.");
-        }
-    }
-
-    public void sacar(double valor) {
-        if (valor > 0 && valor <= saldo) {
-            saldo -= valor;
-        } else {
-            System.out.println("Saque não permitido.");
-        }
-    }
-}
