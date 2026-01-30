@@ -1,25 +1,17 @@
-package aula09;
+package aula10;
 
 public class Pessoa {
-    //ATRIBUTOS
     private String nome;
     private int idade;
     private String sexo;
 
-    //METODOS
-    public void fazerAniver(){
+    public void fazerAniversário(){
         this.setIdade(this.getIdade() + 1);
     }
-
-    //METODOS ESPECIAIS
-    //CONSTRUTOR
-    public Pessoa(String nome, int idade, String sexo){
-        this.nome = nome;
-        this.idade = idade;
-        this.sexo = sexo;
+    public String toString() {
+        return "Pessoa{" + "nome: " + nome + ", idade: " + idade + ", sexo: " + sexo;
     }
-
-    //GETTER E SETTER
+    
     public String getNome() {
         return nome;
     }

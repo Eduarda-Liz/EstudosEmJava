@@ -112,7 +112,7 @@ criar uma classe para os dois lutadores poderem luatem entre si (os dois precisa
 ------------------
 Luta
 ------------------
--desafiado (o tipo deles não é String, pois eles já existem, são instancias)
+-desafiado:Lutador (o tipo deles não é String, pois eles já existem, são instancias)
 -desafiante
 -rounds
 -aprovada
@@ -134,3 +134,18 @@ diagrama de classes contém dados e funções.
 A Agregação é conhecida pelo tipo "tem um", como se fosse "tem um lutador"
 
 se eu utilizo uma instancia, um tipo abstrato de dados, eu posso utilizar tdos os metodos daquela classe
+
+REGRAS:
+
+1 - SÓ PODE SER MARCADA POR LUTADORES DA MESMA CATEGORIA;
+2 - O DESAFIADO E O DESAFIANTE PRECISAM SER PESSOAS DIFERENTES;
+3 - SÓ PODE ACONTECER SE ESSA LUTA TIVER APROVADA;
+4 - SÓ PODE TER COMO RESULTADO A VITÓRIA DE UM DOS LUTADORES OU EMPATE;
+
+Leva anos pra construir um personagem na animação, depois é bem mais fácil pra fazer o personagem se mexer. É assim que a programação orientada a objetos funciona.
+
+AULA 10: Herança
+Permite basear uma nova classe na definição de uma outra classe previamente existente
+
+classe X estende Y -> exemplo da classe Pessoa, que a classe Aluno herda os atributos + informações específicas
+reduz a "repetição" de informações em várias classes (quando tem informação comum entre as classes).
