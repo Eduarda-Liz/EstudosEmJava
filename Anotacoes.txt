@@ -149,3 +149,36 @@ Permite basear uma nova classe na definição de uma outra classe previamente ex
 
 classe X estende Y -> exemplo da classe Pessoa, que a classe Aluno herda os atributos + informações específicas
 reduz a "repetição" de informações em várias classes (quando tem informação comum entre as classes).
+
+
+AULA 11: uma classe pode ser SUPERCLASSE ou SUBCLASSE dependendo do "ponto de vista". Uma classe progenitora tbm pode ser uma subclasse.
+toda subclasse herda TODO O CONTEUDO da sua superclasse (mesmo que não esteja disponivel -, +, #).
+
+Quando tem uma arvore que não tem progenitora ("mae") ela é chamada de RAIZ (como se fosse uma arvore de cabeça pra baixo).
+a parte de baixo (a subclasse não tem filhas) são chamadas de FOLHA.
+
+Descendentes: para definir um descendente não é considerado a "mae", apenas "netos" ou mais.
+Ancestral: não pode ser ancestral das suas próprias filhas, apenas dos netos pra baixo.
+
+ESPECIALIZAÇÃO: quando percorre a arvore de CIMA pra BAIXO.
+GENERALIZAÇÃO: quando percorre a arvore de BAIXO pra CIMA.
+
+TIPOS DE HERANÇA:
+1 - Hernaça de Implementação (herança pobre). Não adiciona atributo e metodo nenhum.
+2 - Herança para DIferença (mais completa). Adiciona metodos e/ou atributos
+
+classe genérica é chamada de Classe Abstrata.
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+ABSTRATO E FINAL
+funções diferentes se método e classe.
+
+CLASSE ABSTRATA: Não pode ser instanciada, só pode servir como progenitora. NÃO PODE GERAR OBJETO
+METODO ABSTRATO: Um metodo declado mas não implementado na progenitora.
+CLASSE FINAL: Não pode ser herdada por outra classe, precisa ser obrigatoriamente folha (esteril)
+METODO FINAL: Não pode ser sobrescrito pelas suas subclasses. Precisa ser obrigatoriamente herdado.
+
+MUITO IMPORTANTE!!!!!!!!! ^^^^^^^^^^^^^^^^^^^^^^^^
+
+A sobreposição de metodos permite que o metodo se comporte diferente naquele objeto em específico
+
