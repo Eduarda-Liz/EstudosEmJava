@@ -1,19 +1,19 @@
-package aula10;
-
+package aula11;
+//HERANCA PRA DIFERENCA: ALUNO TEM TUDO O QUE PESSOA TEM E MAIS.
 public class Aluno extends Pessoa {
-    private int matr;
+    private int matricula;
     private String curso;
 
-    public void cancelarMatr(){
-        System.out.println("Matrícula cancelada");
+    public void pagarMensalidade(){
+        System.out.println("Mensalidade paga, aluno: " + this.nome);
     }
 
 
-    public int getMatr() {
-        return matr;
+    public int getMatricula() {
+        return matricula;
     }
-    public void setMatr(int matr) {
-        this.matr = matr;
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
     public String getCurso() {
         return curso;
@@ -23,4 +23,3 @@ public class Aluno extends Pessoa {
     }
 
 }
-

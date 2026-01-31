@@ -1,16 +1,16 @@
-package aula10;
+package aula11;
 
-public class Pessoa {
-    private String nome;
-    private int idade;
-    private String sexo;
+public abstract class Pessoa { //CLASSE ABSTRATA NAO PODE SER INSTANCIADA DIRETAMENTE
+    protected String nome; //ACESSO PROTEGIDO DA ACESSO A PROPRIA CLASSE  E A CLASSE IMEDIATAMENTE ANTERIOR, SUA SUBCLASSE
+    protected int idade;
+    protected String sexo; 
 
-    public void fazerAniversário(){
-        this.setIdade(this.getIdade() + 1);
+    public void fazerAniver(){
+        this.idade++;
     }
-    public String toString() {
-        return "Pessoa{" + "nome: " + nome + ", idade: " + idade + ", sexo: " + sexo;
-    }
+
+
+
     
     public String getNome() {
         return nome;
