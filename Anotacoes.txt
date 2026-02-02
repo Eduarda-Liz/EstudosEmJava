@@ -182,3 +182,27 @@ MUITO IMPORTANTE!!!!!!!!! ^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sobreposição de metodos permite que o metodo se comporte diferente naquele objeto em específico
 
+AULA 12 - polimorfismo, último pilar da POO
+
+Polimorfismo: permite que um mesmo nome represente varios comportamentos diferentes
+Assinatura do metodo: QUANTIDADE E TIPO dos parametros.
+
+exemplo:
+
+public double calcMedia(double n1, double n2);
+public int calcMedia(double v1, double v2);
+
+O tipo de retorno não entra nos conceito de assinatura, então a assinatura acima é igual.
+
+public double calcMedia(double v1, double v2, double v3);
+
+essa assinatura por exemplo, é diferente, pois tem uma quantidade diferente de parametros da referencia. Não é a mesma assinatura.
+
+1 - SOBREPOSIÇÃO: é quando "sobrepomos" um método para, naquela classe em especifico, tenha um comportamento diferente quando o método é chamado.
+
+lembrar: classe abstrata não pode ser instanciada 
+chamar um metodo com mesmo nome e ter resultado diferente.
+polimorfismo de sobreposição: acontece quando substituimos um metodo de uma superclasse na sua 
+subclasse, usando a mesma assinatura.
+
+um metodo pode ser sobreposto varias vezes, sempre vai valer a "ultima" sobreposição
